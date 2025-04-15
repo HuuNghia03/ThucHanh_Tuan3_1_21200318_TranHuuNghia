@@ -21,7 +21,7 @@ import com.example.tuan3_1.R;
 public class register_activity extends AppCompatActivity {
     ImageView eyeIcon;
     Button registerButton;
-    EditText firstnameEditText, lastnameEditText, emailEditText, passwordEditText;
+    EditText firstnameEditText, emailEditText, passwordEditText;
     TextView haveaccountTextView;
 
     @Override
@@ -30,8 +30,8 @@ public class register_activity extends AppCompatActivity {
         setContentView(R.layout.register_layout);
         eyeIcon = findViewById(R.id.eye_icon);
         passwordEditText = findViewById(R.id.password);
-        firstnameEditText = findViewById(R.id.firstname);
-        lastnameEditText = findViewById(R.id.lastname);
+        firstnameEditText = findViewById(R.id.yourname);
+
         emailEditText = findViewById(R.id.username);
         registerButton = findViewById(R.id.registerButton);
         haveaccountTextView = findViewById(R.id.tvLogin);
@@ -59,11 +59,10 @@ public class register_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String firstname = firstnameEditText.getText().toString().trim();
-                String lastname = lastnameEditText.getText().toString().trim();
                 String email = emailEditText.getText().toString().trim();
                 String password = passwordEditText.getText().toString().trim();
 
-                if (firstname.isEmpty() || lastname.isEmpty() || email.isEmpty() || password.isEmpty()) {
+                if (firstname.isEmpty()  || email.isEmpty() || password.isEmpty()) {
                     Toast.makeText(register_activity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else {
 

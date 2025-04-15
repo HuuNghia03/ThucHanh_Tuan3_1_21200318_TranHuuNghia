@@ -61,44 +61,20 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:text="First name"
+                android:text="Your name"
                 android:textColor="#2196F3"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/firstname"
+                android:id="@+id/yourname"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginBottom="12dp"
                 android:backgroundTint="#2196F3"
-                android:hint="First name"
-                android:inputType="textEmailAddress"
-                android:textColor="@color/black"
-                android:textColorHint="#76777d" />
-
-            <TextView
-                android:id="@+id/tvUsernameLabel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:text="Last name"
-                android:textColor="#2196F3"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/lastname"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="12dp"
-                android:backgroundTint="#2196F3"
-                android:hint="Last name"
+                android:hint="Your name"
                 android:inputType="textEmailAddress"
                 android:textColor="@color/black"
                 android:textColorHint="#76777d" />
